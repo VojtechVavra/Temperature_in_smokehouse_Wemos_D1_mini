@@ -136,7 +136,7 @@ void HTTP_temperature_send() {
   //Serial.print("C = "); 
   //Serial.println(temperature);
   String sensor_value = String(temperature);
-  server.send(200, "text/plane", sensor_value);  
+  server.send(200, "text/plain", sensor_value);  
 }
 
 // Function to connect and reconnect as necessary to the MQTT server.
